@@ -11,6 +11,17 @@
 		D3CA16A92C5FFC8A00A237D1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3CA16A82C5FFC8A00A237D1 /* ContentView.swift */; };
 		D3CA16AB2C5FFC8B00A237D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3CA16AA2C5FFC8B00A237D1 /* Assets.xcassets */; };
 		D3CA16AE2C5FFC8B00A237D1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3CA16AD2C5FFC8B00A237D1 /* Preview Assets.xcassets */; };
+		D3CA16BF2C5FFCF600A237D1 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3CA16BE2C5FFCF600A237D1 /* CoreDataManager.swift */; };
+		D3CA16C22C5FFCFF00A237D1 /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D3CA16C02C5FFCFF00A237D1 /* DataModel.xcdatamodeld */; };
+		D3CA16C42C5FFD1600A237D1 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3CA16C32C5FFD1600A237D1 /* DataService.swift */; };
+		D3CA16C62C5FFD2000A237D1 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3CA16C52C5FFD2000A237D1 /* SplashView.swift */; };
+		D3CA16C82C5FFD2B00A237D1 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3CA16C72C5FFD2B00A237D1 /* HomeView.swift */; };
+		D3CA16CA2C5FFD3300A237D1 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3CA16C92C5FFD3300A237D1 /* HomeViewModel.swift */; };
+		D3CA16CC2C5FFD3C00A237D1 /* QuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3CA16CB2C5FFD3C00A237D1 /* QuestionView.swift */; };
+		D3CA16CE2C5FFD4400A237D1 /* QuestionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3CA16CD2C5FFD4400A237D1 /* QuestionViewModel.swift */; };
+		D3CA16D02C5FFD5300A237D1 /* AppContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3CA16CF2C5FFD5300A237D1 /* AppContainer.swift */; };
+		D3CA16D22C5FFD5C00A237D1 /* Inject.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3CA16D12C5FFD5C00A237D1 /* Inject.swift */; };
+		D3CA16D52C5FFF5400A237D1 /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = D3CA16D42C5FFF5400A237D1 /* Swinject */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +30,16 @@
 		D3CA16A82C5FFC8A00A237D1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D3CA16AA2C5FFC8B00A237D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D3CA16AD2C5FFC8B00A237D1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D3CA16BE2C5FFCF600A237D1 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		D3CA16C12C5FFCFF00A237D1 /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
+		D3CA16C32C5FFD1600A237D1 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		D3CA16C52C5FFD2000A237D1 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		D3CA16C72C5FFD2B00A237D1 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		D3CA16C92C5FFD3300A237D1 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		D3CA16CB2C5FFD3C00A237D1 /* QuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionView.swift; sourceTree = "<group>"; };
+		D3CA16CD2C5FFD4400A237D1 /* QuestionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewModel.swift; sourceTree = "<group>"; };
+		D3CA16CF2C5FFD5300A237D1 /* AppContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppContainer.swift; sourceTree = "<group>"; };
+		D3CA16D12C5FFD5C00A237D1 /* Inject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Inject.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3CA16D52C5FFF5400A237D1 /* Swinject in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,6 +73,9 @@
 		D3CA16A52C5FFC8A00A237D1 /* BambiniMath */ = {
 			isa = PBXGroup;
 			children = (
+				D3CA16B42C5FFC9900A237D1 /* DI */,
+				D3CA16B62C5FFCB100A237D1 /* Data */,
+				D3CA16B52C5FFCAC00A237D1 /* View */,
 				D3CA16A62C5FFC8A00A237D1 /* BambiniMathApp.swift */,
 				D3CA16A82C5FFC8A00A237D1 /* ContentView.swift */,
 				D3CA16AA2C5FFC8B00A237D1 /* Assets.xcassets */,
@@ -65,6 +90,85 @@
 				D3CA16AD2C5FFC8B00A237D1 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D3CA16B42C5FFC9900A237D1 /* DI */ = {
+			isa = PBXGroup;
+			children = (
+				D3CA16CF2C5FFD5300A237D1 /* AppContainer.swift */,
+				D3CA16D12C5FFD5C00A237D1 /* Inject.swift */,
+			);
+			path = DI;
+			sourceTree = "<group>";
+		};
+		D3CA16B52C5FFCAC00A237D1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D3CA16BC2C5FFCDA00A237D1 /* Splash */,
+				D3CA16BB2C5FFCD200A237D1 /* Home */,
+				D3CA16BA2C5FFCCC00A237D1 /* Question */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D3CA16B62C5FFCB100A237D1 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				D3CA16B92C5FFCC500A237D1 /* Manager */,
+				D3CA16B82C5FFCC100A237D1 /* Model */,
+				D3CA16B72C5FFCBC00A237D1 /* Service */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		D3CA16B72C5FFCBC00A237D1 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				D3CA16C32C5FFD1600A237D1 /* DataService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		D3CA16B82C5FFCC100A237D1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D3CA16C02C5FFCFF00A237D1 /* DataModel.xcdatamodeld */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D3CA16B92C5FFCC500A237D1 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				D3CA16BE2C5FFCF600A237D1 /* CoreDataManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		D3CA16BA2C5FFCCC00A237D1 /* Question */ = {
+			isa = PBXGroup;
+			children = (
+				D3CA16CB2C5FFD3C00A237D1 /* QuestionView.swift */,
+				D3CA16CD2C5FFD4400A237D1 /* QuestionViewModel.swift */,
+			);
+			path = Question;
+			sourceTree = "<group>";
+		};
+		D3CA16BB2C5FFCD200A237D1 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				D3CA16C72C5FFD2B00A237D1 /* HomeView.swift */,
+				D3CA16C92C5FFD3300A237D1 /* HomeViewModel.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		D3CA16BC2C5FFCDA00A237D1 /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				D3CA16C52C5FFD2000A237D1 /* SplashView.swift */,
+			);
+			path = Splash;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +187,9 @@
 			dependencies = (
 			);
 			name = BambiniMath;
+			packageProductDependencies = (
+				D3CA16D42C5FFF5400A237D1 /* Swinject */,
+			);
 			productName = BambiniMath;
 			productReference = D3CA16A32C5FFC8A00A237D1 /* BambiniMath.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +218,9 @@
 				Base,
 			);
 			mainGroup = D3CA169A2C5FFC8A00A237D1;
+			packageReferences = (
+				D3CA16D32C5FFF5400A237D1 /* XCRemoteSwiftPackageReference "Swinject" */,
+			);
 			productRefGroup = D3CA16A42C5FFC8A00A237D1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,8 +247,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3CA16BF2C5FFCF600A237D1 /* CoreDataManager.swift in Sources */,
+				D3CA16C82C5FFD2B00A237D1 /* HomeView.swift in Sources */,
+				D3CA16CE2C5FFD4400A237D1 /* QuestionViewModel.swift in Sources */,
+				D3CA16C22C5FFCFF00A237D1 /* DataModel.xcdatamodeld in Sources */,
+				D3CA16CA2C5FFD3300A237D1 /* HomeViewModel.swift in Sources */,
 				D3CA16A92C5FFC8A00A237D1 /* ContentView.swift in Sources */,
+				D3CA16D02C5FFD5300A237D1 /* AppContainer.swift in Sources */,
 				D3CA16A72C5FFC8A00A237D1 /* BambiniMathApp.swift in Sources */,
+				D3CA16D22C5FFD5C00A237D1 /* Inject.swift in Sources */,
+				D3CA16C42C5FFD1600A237D1 /* DataService.swift in Sources */,
+				D3CA16CC2C5FFD3C00A237D1 /* QuestionView.swift in Sources */,
+				D3CA16C62C5FFD2000A237D1 /* SplashView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +392,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"BambiniMath/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -300,6 +421,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"BambiniMath/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -342,6 +464,39 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D3CA16D32C5FFF5400A237D1 /* XCRemoteSwiftPackageReference "Swinject" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Swinject/Swinject.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.9.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D3CA16D42C5FFF5400A237D1 /* Swinject */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D3CA16D32C5FFF5400A237D1 /* XCRemoteSwiftPackageReference "Swinject" */;
+			productName = Swinject;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		D3CA16C02C5FFCFF00A237D1 /* DataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D3CA16C12C5FFCFF00A237D1 /* DataModel.xcdatamodel */,
+			);
+			currentVersion = D3CA16C12C5FFCFF00A237D1 /* DataModel.xcdatamodel */;
+			name = DataModel.xcdatamodeld;
+			path = "/Users/enricomaricar/Documents/XCode Project/BambiniMath/BambiniMath/Data/Model/DataModel.xcdatamodeld";
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = D3CA169B2C5FFC8A00A237D1 /* Project object */;
 }

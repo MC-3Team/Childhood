@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="22758" systemVersion="23F79" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithSwiftData="YES" userDefinedModelVersionIdentifier="">
+    <entity name="Breakdown" representedClassName="Breakdown" syncable="YES" codeGenerationType="class">
+        <attribute name="answer" optional="YES" attributeType="String"/>
+        <attribute name="aritMathIndex" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="isAuto" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="isSpeech" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="question" optional="YES" attributeType="String"/>
+        <relationship name="questions" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="Question" inverseName="breakdown" inverseEntity="Question"/>
+    </entity>
+    <entity name="Objects" representedClassName="Objects" syncable="YES" codeGenerationType="class">
+        <attribute name="currentQuestion" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="health" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="indexBreakdown" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="isComplete" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="onGoing" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <relationship name="questions" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Question" inverseName="object" inverseEntity="Question"/>
+    </entity>
+    <entity name="Question" representedClassName="Question" syncable="YES" codeGenerationType="class">
+        <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="isUsed" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <relationship name="breakdown" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Breakdown" inverseName="questions" inverseEntity="Breakdown"/>
+        <relationship name="object" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="Objects" inverseName="questions" inverseEntity="Objects"/>
+    </entity>
+</model>
