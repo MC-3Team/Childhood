@@ -13,8 +13,12 @@ extension Container {
         let container = Container()
         
         container.register(DataService.self) { _ in
-            CoreDataManager.shared
-                }
+            CoreDataManager()
+        }
+        
+        container.register(SpeechRecognizerService.self) { _ in
+             SpeechRecognitionManager()
+         }
         
         return container
     }

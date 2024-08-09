@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol DataService {
+protocol DataService : AnyObject {
     func insertAllData(object: Objects)
     func getQuestionByObjectId(objectId : Int) -> [Question]
     func updateQuestionisUsed(question: Question, isUsed: Bool)

@@ -9,8 +9,7 @@ import Foundation
 import CoreData
 
 class CoreDataManager: DataService {
-    static let shared = CoreDataManager()
-
+    
     lazy var persistentContainer: NSPersistentContainer = {
         let container = NSPersistentContainer(name: "DataModel")
         container.loadPersistentStores { storeDescription, error in
